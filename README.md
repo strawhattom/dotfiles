@@ -14,11 +14,11 @@ git clone https://github.com/tomx93/dotfiles ~/Downloads
 
 theme : <a href="https://github.com/catppuccin/catppuccin">**Catppuccin**</a>
 
-dock : **latte-dock**
+dock : **latte-dock** (from arch packages)
 
 ## Terminal
 
-using **kitty**
+using **kitty** (can be downloaded from arch packages)
 
 ```bash
 sudo pacman -Syu && sudo pacman -S kitty
@@ -73,17 +73,21 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 
 
 
-### Extra packages
+### Extra packages/alias
+
+Some aliases from `~/.zshrc` won't work if you don't have some script or packages :
 
 - exa : better `ls` (arch package)
 
 - spicetify : customize spotify
 
-- [pokemon icat](https://github.com/ph04/pokemon-icat) : fetching pokemong
+- [pokemon-icat](https://github.com/ph04/pokemon-icat) : fetching pokemon
 
 - [pipes](https://github.com/pipeseroni/pipes.sh) : showing pipes in terminal
 
 - unimatrix : matrix terminal effect (arch package)
+
+- matlab : if you don't want it, just comment it in `~/.zshrc`
 
 
 
