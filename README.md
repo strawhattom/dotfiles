@@ -2,8 +2,6 @@
 
 Those dotfiles are a mix of multiple other dotfiles from other users but i can't remember names sorry. It is usually taken from **r/unixporn**
 
-
-
 ## Cloning this repository
 
 Just clone this repository in an easy accessible folder, i'm usually cloning to `~/Downloads` :
@@ -12,15 +10,11 @@ Just clone this repository in an easy accessible folder, i'm usually cloning to 
 git clone https://github.com/tomx93/dotfiles ~/Downloads
 ```
 
-
-
 ## Theme + UI
 
 theme : <a href="https://github.com/catppuccin/catppuccin">**Catppuccin**</a>
 
 dock : **latte-dock**
-
-
 
 ## Terminal
 
@@ -42,8 +36,6 @@ cp kitty.conf ~/.config/kitty
 
 using **zsh** with <a href="https://ohmyz.sh/#Install">oh-my-zsh</a> and <a href="https://starship.rs">starship</a> + zsh plugins. Currently using **paru** to manage arch packages.
 
-
-
 ### Installing Oh My Zsh
 
 ```bash
@@ -63,13 +55,9 @@ Then in `~/.zshrc`
 eval "$(starship init bash)"
 ```
 
- 
-
 ### Adding pluggins toauto suggestions and syntax highlighting zsh
 
 *Oh-My-Zsh is needed !!*
-
-
 
 <a href="https://github.com/zsh-users/zsh-auto-suggestions">zsh-auto-suggestions</a>
 
@@ -83,6 +71,22 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 ```
 
+
+
+### Extra packages
+
+- exa : better `ls` (arch package)
+
+- spicetify : customize spotify
+
+- [pokemon icat](https://github.com/ph04/pokemon-icat) : fetching pokemong
+
+- [pipes](https://github.com/pipeseroni/pipes.sh) : showing pipes in terminal
+
+- unimatrix : matrix terminal effect (arch package)
+
+
+
 Then to copy `.zshrc` to root directory `~/`
 
 
@@ -90,8 +94,6 @@ Then to copy `.zshrc` to root directory `~/`
 ## Text editor
 
 using vim, neovim and an integrated IDE [lunarvim](https://github.com/LunarVim/LunarVim)
-
-
 
 ### Neovim
 
@@ -103,8 +105,6 @@ cp -R nvim ~/.config
 ```
 
 Type `vim` or `nvim` in your terminal and download packages by taping `:PlugInstall`
-
-
 
 ### Lunarvim
 
