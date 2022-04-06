@@ -16,6 +16,8 @@ theme : <a href="https://github.com/catppuccin/catppuccin">**Catppuccin**</a>
 
 dock : **latte-dock** (from arch packages)
 
+window manager : [bismuth](https://github.com/Bismuth-Forge/bismuth)
+
 ## Terminal
 
 using **kitty** (can be downloaded from arch packages)
@@ -24,12 +26,12 @@ using **kitty** (can be downloaded from arch packages)
 sudo pacman -Syu && sudo pacman -S kitty
 ```
 
-Then create if not existing `~/.config/kitty` and copy  `kitty.conf` into it :
+Then create if not exists `~/.config/kitty` or copy  `kitty` folder in `~/.config/kitty`:
 
 ```bash
 # ~/Downloads/dotfiles
 
-cp kitty.conf ~/.config/kitty
+cp -R .config/kitty ~/.config/
 ```
 
 ## Shell
@@ -71,6 +73,7 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 ```
 
+Then to copy `.zshrc` to root directory `~/`
 
 
 ### Extra packages/alias
@@ -91,7 +94,7 @@ Some aliases from `~/.zshrc` won't work if you don't have some script or package
 
 
 
-Then to copy `.zshrc` to root directory `~/`
+
 
 
 
@@ -105,7 +108,7 @@ After installing neovim, copy `nvim` folder to `~/.config`:
 
 ```bash
 # ~/Downloads/dotfiles
-cp -R nvim ~/.config
+cp -R .config/nvim ~/.config
 ```
 
 Type `vim` or `nvim` in your terminal and download packages by taping `:PlugInstall`
