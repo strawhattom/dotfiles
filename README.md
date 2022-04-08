@@ -7,16 +7,16 @@ Those dotfiles are a mix of multiple other dotfiles from other users but i can't
 Just clone this repository in an easy accessible folder, i'm usually cloning to `~/Downloads` :
 
 ```shell
-git clone https://github.com/tomx93/dotfiles
+git clone https://github.com/tomx93/dotfiles ~/Downloads
 ```
 
 ## Theme + UI
 
-theme : <a href="https://github.com/catppuccin/catppuccin">**Catppuccin**</a>
+- theme : <a href="https://github.com/catppuccin/catppuccin">**Catppuccin**</a>
 
-dock : **latte-dock** (from arch packages)
+- dock : **latte-dock** (from arch packages)
 
-window manager : [bismuth](https://github.com/Bismuth-Forge/bismuth)
+- window manager : [bismuth](https://github.com/Bismuth-Forge/bismuth)
 
 ## Terminal
 
@@ -75,7 +75,6 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 
 Then to copy `.zshrc` to root directory `~/`
 
-
 ### Extra packages/alias
 
 Some aliases from `~/.zshrc` won't work if you don't have some script or packages :
@@ -92,11 +91,7 @@ Some aliases from `~/.zshrc` won't work if you don't have some script or package
 
 - matlab : if you don't want it, just comment it in `~/.zshrc`
 
-
-
-
-
-
+- [fzf](https://github.com/junegunn/fzf#installation) : Fuzzy Finder, terminal integrated file finder
 
 ## Text editor
 
