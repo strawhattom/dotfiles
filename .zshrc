@@ -18,7 +18,6 @@ else
 	rxfetch
 fi
 
-
 # Aliases
 alias zshconfig="lvim ~/.zshrc"
 alias ohmyzsh="lvim ~/.oh-my-zsh/oh-my-zsh.sh"
@@ -37,7 +36,6 @@ alias vim='lvim'
 
 
 alias dpaste="curl -F 'format=url' -F 'content=<-' https://paste.nami10.fr/api/"
-
 
 # Cool script
 alias pipes="~/.local/pipes/pipes.sh"
