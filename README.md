@@ -7,7 +7,7 @@ Those dotfiles are a mix of multiple other dotfiles from other users but i can't
 Just clone this repository in an easy accessible folder, i'm usually cloning to `~/Downloads` :
 
 ```shell
-git clone https://github.com/tomx93/dotfiles ~/Downloads
+git clone https://github.com/tomx93/dotfiles
 ```
 
 ## Theme + UI
