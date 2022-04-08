@@ -12,7 +12,7 @@ git clone https://github.com/tomx93/dotfiles ~/Downloads
 
 ## Theme + UI
 
-- theme : <a href="https://github.com/catppuccin/catppuccin">**Catppuccin**</a>
+- theme : <a href="https://github.com/catppuccin/catppuccin">Catppuccin</a>
 
 - dock : **latte-dock** (from arch packages)
 
@@ -20,7 +20,7 @@ git clone https://github.com/tomx93/dotfiles ~/Downloads
 
 ## Terminal
 
-using **kitty** (can be downloaded from arch packages)
+using [**kitty**](https://sw.kovidgoyal.net/kitty/binary/) (can be downloaded from arch packages)
 
 ```bash
 sudo pacman -Syu && sudo pacman -S kitty
@@ -36,7 +36,7 @@ cp -R .config/kitty ~/.config/
 
 ## Shell
 
-using **zsh** with <a href="https://ohmyz.sh/#Install">oh-my-zsh</a> and <a href="https://starship.rs">starship</a> + zsh plugins. Currently using **paru** to manage arch packages.
+using **zsh** with <a href="https://ohmyz.sh/#Install">oh-my-zsh</a> and <a href="https://starship.rs">starship</a> + zsh plugins. Currently using [**paru**](https://github.com/Morganamilo/paru) to manage arch packages.
 
 ### Installing Oh My Zsh
 
@@ -57,7 +57,7 @@ Then in `~/.zshrc`
 eval "$(starship init bash)"
 ```
 
-### Adding pluggins toauto suggestions and syntax highlighting zsh
+### Adding pluggins auto suggestions and syntax highlighting to zsh
 
 *Oh-My-Zsh is needed !!*
 
@@ -87,7 +87,9 @@ Some aliases from `~/.zshrc` won't work if you don't have some script or package
 
 - [pipes](https://github.com/pipeseroni/pipes.sh) : showing pipes in terminal
 
-- unimatrix : matrix terminal effect (arch package)
+- [unimatrix](https://github.com/will8211/unimatrix) : matrix terminal effect
+
+- [rxfetch](https://github.com/Mangeshrex/rxfetch) : fetching current system info
 
 - matlab : if you don't want it, just comment it in `~/.zshrc`
 
