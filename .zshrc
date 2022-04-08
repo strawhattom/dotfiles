@@ -20,20 +20,20 @@ fi
 
 
 # Aliases
-alias zshconfig="nvim ~/.zshrc"
-alias ohmyzsh="nvim ~/.oh-my-zsh/oh-my-zsh.sh"
-alias vimconfig="nvim ~/.vimrc"
-alias vimc="nvim ~/.config/nvim/init.vim"
+alias zshconfig="lvim ~/.zshrc"
+alias ohmyzsh="lvim ~/.oh-my-zsh/oh-my-zsh.sh"
+alias vimconfig="lvim ~/.vimrc"
+alias vimc="lvim ~/.config/nvim/init.vim"
 alias ls="exa"
 alias la="exa -la"
 alias grep="grep --color=auto"
-alias vimplugc="nvim ~/.config/nvim/vim-plug/plugins.vim"
-alias kittyc="nvim ~/.config/kitty/kitty.conf"
-alias sc="nvim ~/.config/sxhkd/sxhkdrc"
-alias bc="nvim ~/.config/bspwm/bspwmrc"
-alias pc="nvim ~/.config/polybar/config"
+alias vimplugc="lvim ~/.config/nvim/vim-plug/plugins.vim"
+alias kittyc="lvim ~/.config/kitty/kitty.conf"
+alias sc="lvim ~/.config/sxhkd/sxhkdrc"
+alias bc="lvim ~/.config/bspwm/bspwmrc"
+alias pc="lvim ~/.config/polybar/config"
 alias cdw="cd ~/OneDrive/ESILV/S6/"
-alias vim='nvim'
+alias vim='lvim'
 
 
 alias dpaste="curl -F 'format=url' -F 'content=<-' https://paste.nami10.fr/api/"
