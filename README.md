@@ -2,6 +2,12 @@
 
 Those dotfiles are a mix of multiple other dotfiles from other users but i can't remember names sorry. It is usually taken from **r/unixporn**
 
+## Preview
+
+<img src="https://user-images.githubusercontent.com/66173239/163460947-de96fd9f-2a3d-4482-851f-3ea295840432.png" align="center"/>
+
+You will may be have only a black square on top-left corner because you don't have my logo. You can replace it by whatever you want.
+
 ## Cloning this repository
 
 Just clone this repository in an easy accessible folder, i'm usually cloning to `~/Downloads` 
