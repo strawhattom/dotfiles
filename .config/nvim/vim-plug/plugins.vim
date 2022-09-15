@@ -16,6 +16,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'neoclide/coc.nvim', {'branch': 'release'} " Autocompletion 
     Plug 'numtoStr/Comment.nvim' " Autocomments
     Plug 'nvim-treesitter/nvim-treesitter', {'do':':TSUpdate'} " Highlight syntaxing 
+    Plug 'windwp/nvim-ts-autotag' " Auto tag
     Plug 'nvim-lualine/lualine.nvim'            " Statusline
     Plug 'norcalli/nvim-colorizer.lua'          " Color preview 
     Plug 'ryanoasis/vim-devicons'               " Icon next to folders on NERD
@@ -23,7 +24,11 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     "Plug 'dense-analysis/ale' "Syntax errors
     Plug 'nvim-lua/plenary.nvim'                " Fuzzy finder
     Plug 'nvim-telescope/telescope.nvim'        " Fuzzy finder
-    Plug 'Xuyuanp/scrollbar.nvim'               " Scrollbar
+    " Plug 'Xuyuanp/scrollbar.nvim'               " Scrollbar
+    Plug 'neovim/nvim-lspconfig' " Collection of lsp
+    Plug 'drzel/vim-gui-zoom' " Zoom
+
+
     "" Colorscheme
     
     Plug 'catppuccin/nvim', {'as' : 'catppuccin'}

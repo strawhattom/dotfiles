@@ -4,10 +4,21 @@ source $HOME/.config/nvim/vim-plug/plugins.vim
 "ale_coc
 source $HOME/.config/nvim/ale_coc.vim
 
+" Templates
+autocmd BufNewFile *.html 0r ~/.vim/templates/html.skel
 
-"Line numbers
+
+"Vim config
+set relativenumber
 set number
+set tabstop=2
 set mouse=a
+
+
+"Neovide config
+set guifont=FiraCode\ Nerd\ Font:h13
+nmap <c-=> :ZoomIn<cr>
+nmap <c--> :ZoomOut<cr>
 
 "Setting colorscheme
 colorscheme catppuccin
@@ -45,5 +56,6 @@ require('lualine').setup()
 require('colorizer').setup()
 require('toggleterm').setup()
 require('Comment').setup()
+require('nvim-ts-autotag').setup()
 END
 

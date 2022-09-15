@@ -8,6 +8,8 @@ an executable
 ]]
 -- THESE ARE EXAMPLE CONFIGS FEEL FREE TO CHANGE TO WHATEVER YOU WANT
 
+vim.opt.relativenumber = true -- set relative numbered lines
+
 -- general
 lvim.log.level = "warn"
 lvim.format_on_save = true
@@ -18,7 +20,7 @@ lvim.leader = "space"
 -- add your own keymapping
 lvim.keys.normal_mode["<C-s>"] = ":w<cr>"
 
-lvim.builtin.dashboard.active = true
+lvim.builtin.dashboard.active = false
 lvim.builtin.notify.active = true
 lvim.builtin.terminal.active = true
 lvim.builtin.nvimtree.setup.view.side = "left"
@@ -28,6 +30,8 @@ lvim.builtin.nvimtree.show_icons.git = 0
 lvim.builtin.treesitter.ensure_installed = {
   "bash",
   "c",
+  "cpp",
+  "c_sharp",
   "javascript",
   "json",
   "lua",
@@ -35,21 +39,19 @@ lvim.builtin.treesitter.ensure_installed = {
   "typescript",
   "tsx",
   "css",
+  "html",
   "rust",
   "java",
   "yaml",
+  "vim",
 }
 
 lvim.builtin.treesitter.ignore_install = { "haskell" }
 lvim.builtin.treesitter.highlight.enabled = true
 
 
--- TODO: User Config for predefined plugins, PLUGSIN ARE ALSO TAKEN FROM NEOVIM
--- After changing plugin config exit and reopen LunarVim, Run :PackerInstall :PackerCompile
--- Additional Plugins
 lvim.plugins = {
    {"catppuccin/nvim"},
-   {"folke/tokyonight.nvim"},
    {
      "folke/trouble.nvim",
      cmd = "TroubleToggle",
@@ -57,6 +59,13 @@ lvim.plugins = {
 }
 
 -- Autocommands (https://neovim.io/doc/user/autocmd.html)
--- lvim.autocommands.custom_groups = {
---   { "BufWinEnter", "*.lua", "setlocal ts=8 sw=8" },
--- }
+lvim.autocommands.custom_groups = {
+  { "BufWinEnter", "*.lua", "setlocal ts=8 sw=8" },
+  { "BufNewFile", "*.html", "0r ~/.vim/templates/html.skel"},
+}
+
+require'nvim-treesitter.configs'.setup {
+  autotag = {
+    enable = true,
+  }
+}
