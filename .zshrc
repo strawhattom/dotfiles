@@ -15,7 +15,9 @@ if [[ $(($RANDOM % 2)) == 0 ]]; then
 	# rxfetch
 else
 	# neofetch --kitty --size 256 --source ~/Pictures/bojji.png
-	rxfetch
+	# rxfetch
+	$HOME/.pokemon-icat/pokemon-icat.sh
+
 fi
 
 # Aliases
@@ -38,7 +40,7 @@ alias vim='nvim'
 alias dpaste="curl -F 'format=url' -F 'content=<-' https://paste.nami10.fr/api/"
 
 # Cool script
-alias pipes="~/.local/pipes/pipes.sh"
+alias pipes="pipes.sh"
 alias unimatrix="unimatrix -s 96" #same speed as cmatrix
 alias pokemon="$HOME/.pokemon-icat/pokemon-icat.sh" #pokemon icat
 
@@ -50,3 +52,4 @@ path+=/home/sir/.local/bin
 # fzf catppuccin colorscheme
 export FZF_DEFAULT_OPTS='--color=bg+:#302D41,bg:#1E1E2E,spinner:#F8BD96,hl:#F28FAD --color=fg:#D9E0EE,header:#F28FAD,info:#DDB6F2,pointer:#F8BD96 --color=marker:#F8BD96,fg+:#F2CDCD,prompt:#DDB6F2,hl+:#F28FAD'
 
+export PATH=$PATH:/home/sir/.spicetify
