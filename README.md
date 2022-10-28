@@ -68,20 +68,18 @@ eval "$(starship init bash)"
 *Oh-My-Zsh is needed !!*
 
 <a href="https://github.com/zsh-users/zsh-auto-suggestions">zsh-auto-suggestions</a>
+<a href="https://github.com/zsh-users/zsh-syntax-highlighting">zsh-syntax-highlighting</a>
+<a href="https://github.com/agkozak/zsh-z">zsh-z</a>
 
 ```shell
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-```
-
-<a href="https://github.com/zsh-users/zsh-syntax-highlighting">zsh-syntax-highlighting</a>
-
-```shell
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+git clone https://github.com/agkozak/zsh-z ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-z
 ```
 
 Then to copy `.zshrc` to root directory `~/`
 
-### Extra packages/alias
+### Extra packages/aliases
 
 Some aliases from `~/.zshrc` won't work if you don't have some script or packages :
 
@@ -95,15 +93,13 @@ Some aliases from `~/.zshrc` won't work if you don't have some script or package
 
 - [unimatrix](https://github.com/will8211/unimatrix) : matrix terminal effect
 
-- [rxfetch](https://github.com/Mangeshrex/rxfetch) : fetching current system info
-
-- matlab : if you don't want it, just comment it in `~/.zshrc`
+- fetch script : `neofetch`, `rxfetch` or `nitch`
 
 - [fzf](https://github.com/junegunn/fzf#installation) : Fuzzy Finder, terminal integrated file finder
 
 ## Text editor
 
-using vim, neovim and an integrated IDE [lunarvim](https://github.com/LunarVim/LunarVim)
+using vim, neovim and ~~an integrated IDE [lunarvim](https://github.com/LunarVim/LunarVim)~~
 
 ### Neovim
 
@@ -132,5 +128,3 @@ rm ~/.config/lvim/config.lua
 # ~/Downloads/dotfiles
 cp .config/lvim/config.lua ~/.config/lvim/
 ```
-
-Maybe you'll need to install `lua` arch package.
