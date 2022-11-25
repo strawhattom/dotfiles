@@ -21,15 +21,17 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'norcalli/nvim-colorizer.lua'          " Color preview 
     Plug 'ryanoasis/vim-devicons'               " Icon next to folders on NERD
     Plug 'akinsho/toggleterm.nvim'              " Toggle terminal
-    "Plug 'dense-analysis/ale' "Syntax errors
+    Plug 'dense-analysis/ale'                   "Syntax errors
     Plug 'nvim-lua/plenary.nvim'                " Fuzzy finder
     Plug 'nvim-telescope/telescope.nvim'        " Fuzzy finder
     " Plug 'Xuyuanp/scrollbar.nvim'               " Scrollbar
     Plug 'neovim/nvim-lspconfig' " Collection of lsp
     Plug 'drzel/vim-gui-zoom' " Zoom
-
+    Plug 'nvim-tree/nvim-web-devicons'
+    Plug 'romgrk/barbar.nvim' " Tab panes
 
     "" Colorscheme
+    Plug 'rose-pine/neovim', {'as' : 'rose-pine'}
     
     Plug 'catppuccin/nvim', {'as' : 'catppuccin'}
     
