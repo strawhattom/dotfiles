@@ -22,7 +22,7 @@ git clone https://github.com/tomx93/dotfiles
 
 - dock : **latte-dock** (from arch packages)
 
-- window manager : [bismuth](https://github.com/Bismuth-Forge/bismuth)
+- window tiling : [bismuth](https://github.com/Bismuth-Forge/bismuth)
 
 ## Terminal
 
@@ -43,6 +43,8 @@ cp -R .config/kitty ~/.config/
 ## Shell
 
 using **zsh** with <a href="https://ohmyz.sh/#Install">oh-my-zsh</a> and <a href="https://starship.rs">starship</a> + zsh plugins. Currently using [**paru**](https://github.com/Morganamilo/paru) to manage arch packages.
+
+For paru, we have to change the order of responses (`/etc/paru.conf`, uncommenting BttomUp) and enabling colors (`/etc/pacman.conf`, uncommenting Colors)
 
 ### Installing Oh My Zsh
 
