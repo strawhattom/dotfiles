@@ -44,7 +44,7 @@ cp -R .config/kitty ~/.config/
 
 using **zsh** with <a href="https://ohmyz.sh/#Install">oh-my-zsh</a> and <a href="https://starship.rs">starship</a> + zsh plugins. Currently using [**paru**](https://github.com/Morganamilo/paru) to manage arch packages.
 
-For paru, we have to change the order of responses (`/etc/paru.conf`, uncommenting BttomUp) and enabling colors (`/etc/pacman.conf`, uncommenting Colors)
+For paru, we have to change the order of responses (`/etc/paru.conf`, uncommenting `BottomUp`) and enabling colors (`/etc/pacman.conf`, uncommenting `Colors)
 
 ### Installing Oh My Zsh
 
