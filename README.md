@@ -13,7 +13,7 @@ You will may be have only a black square on top-left corner because you don't ha
 Just clone this repository in an easy accessible folder, i'm usually cloning to `~/Downloads` 
 
 ```shell
-git clone https://github.com/tomx93/dotfiles
+git clone https://github.com/strawhattom/dotfiles
 ```
 
 ## Theme + UI
