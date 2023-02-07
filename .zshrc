@@ -1,3 +1,5 @@
+# Fig pre block. Keep at the top of this file.
+[[ -f "$HOME/.fig/shell/zshrc.pre.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.pre.zsh"
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
@@ -8,19 +10,12 @@ ZSH_THEME="robbyrussell"
 #Oh-my-zsh
 source $ZSH/oh-my-zsh.sh
 
-
 #Random execute when launching
 
-# if [[ $(($RANDOM % 2)) == 0 ]]; then
-	# $HOME/.pokemon-icat/pokemon-icat.sh
-	# rxfetch
-# else
-	nitch
-	# $HOME/.pokemon-icat/pokemon-icat.sh
-# fi
+$HOME/.pokemon-icat/pokemon-icat.sh
 
 # Aliases
-alias school="cd ~/OneDrive/ESILV/S7/"
+alias school="cd ~/Library/CloudStorage/OneDrive-DeVinci/ESILV/S8/"
 
 alias icat="kitty +kitten icat"
 alias zshconfig="nvim ~/.zshrc"
@@ -37,7 +32,8 @@ alias bc="nvim ~/.config/bspwm/bspwmrc"
 alias pc="nvim ~/.config/polybar/config"
 alias cdw="cd ~/OneDrive/ESILV/S6/"
 alias vim='nvim'
-alias ip='ip -c'
+alias python='python3'
+alias pip='pip3'
 
 
 # alias dpaste="curl -F 'format=url' -F 'content=<-' https://paste.nami10.fr/api/"
@@ -56,3 +52,7 @@ alias spicetify="$HOME/.spicetify/spicetify"
 export FZF_DEFAULT_OPTS='--color=bg+:#302D41,bg:#1E1E2E,spinner:#F8BD96,hl:#F28FAD --color=fg:#D9E0EE,header:#F28FAD,info:#DDB6F2,pointer:#F8BD96 --color=marker:#F8BD96,fg+:#F2CDCD,prompt:#DDB6F2,hl+:#F28FAD'
 
 export PATH=$PATH:/home/sir/.spicetify
+export PATH=$PATH:/Users/sir/.spicetify
+
+# Fig post block. Keep at the bottom of this file.
+[[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"
