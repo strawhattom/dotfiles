@@ -1,10 +1,8 @@
-mkdir -p ~/.config/{kitty,nvim}
-
 ### Kitty conf
-cp -R .config/kitty ~/.config/
+ln -s ~/.dotfiles/.config/kitty ~/.config/kitty
 
 ### Neovim conf
-cp -R .config/nvim ~/.config/
+ln -s ~/.dotfiles/.config/nvim ~/.config/nvim
 
 ### Installing oh-my-zsh & starship prompt
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
@@ -16,7 +14,7 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 git clone https://github.com/agkozak/zsh-z ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-z
 
 ### Zsh config
-cp .zshrc ~/
+ln -s ~/.dotfiles/.zshrc ~/.zshrc
 
 ### Bonus
 # Pokemon

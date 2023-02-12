@@ -21,7 +21,8 @@ nmap <c-=> :ZoomIn<cr>
 nmap <c--> :ZoomOut<cr>
 
 "Setting colorscheme
-colorscheme catppuccin
+" colorscheme catppuccin
+colorscheme rose-pine
 
 let mapleader=" " " map leader to Space
 

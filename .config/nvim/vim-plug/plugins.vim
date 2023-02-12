@@ -2,14 +2,11 @@
 if empty(glob('~/.config/nvim/autoload/plug.vim'))
   silent !curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs
     \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-  "autocmd VimEnter * PlugInstall
-  "autocmd VimEnter * PlugInstall | source $MYVIMRC
 endif
 
 call plug#begin('~/.config/nvim/autoload/plugged')
 
     "" My plugins
-    
     Plug 'sheerun/vim-polyglot' " Better syntax support
     Plug 'scrooloose/NERDTree' " File explorer
     Plug 'jiangmiao/auto-pairs' " Autopairs for brackets
@@ -21,10 +18,13 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'norcalli/nvim-colorizer.lua'          " Color preview 
     Plug 'ryanoasis/vim-devicons'               " Icon next to folders on NERD
     Plug 'akinsho/toggleterm.nvim'              " Toggle terminal
-    Plug 'dense-analysis/ale'                   "Syntax errors
-    Plug 'nvim-lua/plenary.nvim'                " Fuzzy finder
-    Plug 'nvim-telescope/telescope.nvim'        " Fuzzy finder
-    " Plug 'Xuyuanp/scrollbar.nvim'               " Scrollbar
+
+    Plug 'prabirshrestha/vim-lsp'
+
+    " Fuzzy finder
+    Plug 'nvim-lua/plenary.nvim'
+    Plug 'nvim-telescope/telescope.nvim'
+
     Plug 'neovim/nvim-lspconfig' " Collection of lsp
     Plug 'drzel/vim-gui-zoom' " Zoom
     Plug 'nvim-tree/nvim-web-devicons'
@@ -32,7 +32,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     "" Colorscheme
     Plug 'rose-pine/neovim', {'as' : 'rose-pine'}
-    
     Plug 'catppuccin/nvim', {'as' : 'catppuccin'}
     
 

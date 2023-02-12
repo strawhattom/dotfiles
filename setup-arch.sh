@@ -20,4 +20,3 @@ sudo pacman -S kitty make git python exa bat
 
 sudo sh ./scripts/common-conf.sh
 
-
